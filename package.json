@@ -1,0 +1,30 @@
+{
+  "name": "ubiquitous-broccoli",
+  "version": "1.0.0",
+  "description": "Learning Web Workers",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "babel src/  -w -d public/ -s inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thayssn/ubiquitous-broccoli.git"
+  },
+  "keywords": [
+    "broccoli",
+    "web",
+    "worker",
+    "glitch",
+    "effect",
+    "js"
+  ],
+  "author": "Thays dos Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thayssn/ubiquitous-broccoli/issues"
+  },
+  "homepage": "https://github.com/thayssn/ubiquitous-broccoli#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}

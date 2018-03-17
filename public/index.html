@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Glitch Web Worker</title>
+    <style>
+        body{
+            background-color: #333
+        }
+
+        canvas{
+            display: block;
+            background-color: #FFF;
+            margin: 50px auto;
+        }
+
+        #time{
+            color: #FFF;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="time"></div>
+<button id="gray" onclick="c.original()">Original</button>
+<button id="original" onclick="c.grayscale()">Grayscale</button>
+<button id="opacity" onclick="c.opacity()">Opacityl</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+<script src="main.js"></script>
+<script>
+    let p = 0;
+    let counter = function(){
+        p++;
+        document.getElementById("time").textContent = p/100;
+        requestAnimationFrame(counter);
+    };
+    requestAnimationFrame(counter);
+</script>
+</body>
+</html>
